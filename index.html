@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Thakkar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="profile.jpg" alt="Profile Picture" class="navbar-profile-img">
+            <span class="ml-2">Krish Thakkar</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="typewriter">Krish Thakkar</h1>
+            <p class="lead">BCA Student | Aspiring Software Developer</p>
+        </div>
+    </header>           
+
+    <section id="about" class="py-5 gradient-bg">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">About Me</h2>
+                    <p>Currently studying BCA in Semester 5 at C.K. Pithawala Computer Management Department. Passionate about learning new technologies and applying them in real-world projects. I also enjoy playing chess, which helps me develop strategic thinking and problem-solving skills.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle shadow">
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 section-title">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card skill-card">
+                        <div class="card-body">
+                            <h4>Programming Languages</h4>
+                            <div class="row">
+                                <div class="col-md-4 text-center">
+                                    <i class="fab fa-java fa-3x"></i>
+                                    <p>Java</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <i class="fab fa-python fa-3x"></i>
+                                    <p>Python</p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <i class="fas fa-code fa-3x"></i>
+                                    <p>C / C++</p>
+                                </div>
+                                <div class="col-md-4 text-center mt-4">
+                                    <i class="fab fa-php fa-3x"></i>
+                                    <p>PHP</p>
+                                </div>
+                                <div class="col-md-4 text-center mt-4">
+                                    <i class="fas fa-database fa-3x"></i>
+                                    <p>SQL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card skill-card">
+                        <div class="card-body">
+                            <h4>Mobile Development</h4>
+                            <ul>
+                                <li><i class="fas fa-mobile-alt"></i> Android Development with Java</li>
+                                <li><i class="fas fa-mobile-alt"></i> Basic Flutter</li>
+                                <li><i class="fas fa-mobile-alt"></i> Learning Kotlin</li>
+                                <li><i class="fas fa-mobile-alt"></i> Learning Jetpack Compose</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card skill-card">
+                        <div class="card-body">
+                            <h4>Web Development</h4>
+                            <ul>
+                                <li><i class="fas fa-globe"></i> HTML</li>
+                                <li><i class="fas fa-globe"></i> Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 gradient-bg">
+        <div class="container">
+            <h2 class="text-center mb-4 section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h4><i class="fas fa-project-diagram"></i> Android Application for Student Attendance and Faculty Management</h4>
+                            <p>Currently working on developing an Android application for managing student attendance and faculty activities using Kotlin and Jetpack Compose.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 section-title">Contact</h2>
+            <p class="text-center">Feel free to get in touch with me through any of the following methods:</p>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a href="mailto:kthakkar894@gmail.com" class="contact-icon">
+                        <i class="fas fa-envelope fa-3x"></i>
+                        <p>Email</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="tel:+916351542529" class="contact-icon">
+                        <i class="fas fa-phone fa-3x"></i>
+                        <p>Phone</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.linkedin.com/in/thakkar-krish-7726452aa" class="contact-icon" target="_blank">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.instagram.com/i_am_krish_thakkar" class="contact-icon" target="_blank">
+                        <i class="fab fa-instagram fa-3x"></i>
+                        <p>Instagram</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Krish Thakkar.</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
