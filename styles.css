@@ -21,7 +21,7 @@ body {
 
 
     .hero {
-        background: linear-gradient(135deg, #a2c2e4, #7b4af7);
+        background: linear-gradient(135deg, #a96ffc, #7b4af7);
         
         height: 100vh;
         display: flex;
@@ -66,29 +66,47 @@ body {
     }
     
     .hero-icons i:nth-child(2) {
-        top: 30%;
-        left: 50%;
+        top: 20%;
+        left: 40%;
         animation-duration: 20s;
     }
     
     .hero-icons i:nth-child(3) {
-        top: 60%;
-        left: 30%;
+        top: 30%;
+        left: 60%;
         animation-duration: 22s;
     }
     
     .hero-icons i:nth-child(4) {
         top: 40%;
-        left: 70%;
+        left: 80%;
         animation-duration: 24s;
     }
     
     .hero-icons i:nth-child(5) {
-        top: 70%;
-        left: 80%;
+        top: 50%;
+        left: 10%;
         animation-duration: 26s;
     }
     
+    .hero-icons i:nth-child(6) {
+        top: 60%;
+        left: 30%;
+        animation-duration: 28s;
+    }
+    
+    .hero-icons i:nth-child(7) {
+        top: 70%;
+        left: 50%;
+        animation-duration: 30s;
+    }
+    
+    .hero-icons i:nth-child(8) {
+        top: 80%;
+        left: 70%;
+        animation-duration: 32s;
+    }
+
     @keyframes float {
         0% {
             transform: translateY(0);
