@@ -19,27 +19,6 @@ body {
 }
 
 
-.hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #88c1ff, #9277f3); /* Gradient from light blue to very light blue */
-    color: white;
-    text-align: center;
-    overflow: hidden;
-}
-
-#background-video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    opacity: 0.3; /* Soft background video */
-}
-
 
     .hero {
         background: linear-gradient(135deg, #a2c2e4, #7b4af7);
