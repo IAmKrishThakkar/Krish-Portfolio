@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="_dZBlMEUGqji9o6C41Gjun7dzFdBGmpiRui-1M0Hb6w" />
     <title>Krish Thakkar - Portfolio</title>
-        <link rel="icon" href="logo.png" type="image/icon type">
-
+    <link rel="icon" type="image/x-icon" href="/logo.png">
     <style>
         body {
             background-color: #111;
@@ -14,6 +12,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            scroll-behavior: smooth;
         }
 
         .container {
@@ -92,6 +91,20 @@
             font-size: 48px;
             font-weight: bold;
             margin-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: .15em solid orange;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange }
         }
 
         .hero-text p {
@@ -112,6 +125,7 @@
             cursor: pointer;
             margin-right: 10px;
             text-decoration: none;
+            transition: background-color 0.3s ease;
         }
 
         .button:hover {
@@ -123,6 +137,7 @@
             background-color: #222;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
         }
 
         .about h2, .contact-info h2 {
@@ -139,6 +154,15 @@
 
         .skills {
             padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .skills h2 {
+            font-size: 36px;
+            color: #ff9900;
+            border-bottom: 2px solid #ff9900;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .skills-text {
@@ -163,12 +187,14 @@
             height: 10px;
             background-color: #333;
             border-radius: 5px;
+            overflow: hidden;
         }
 
         .skills-item .progress .fill {
             height: 100%;
             background-color: #ff9900;
             border-radius: 5px;
+            transition: width 0.6s ease;
         }
 
         .skills-item .percentage {
@@ -216,6 +242,7 @@
 
         .projects, .mobile-development {
             padding: 20px;
+            margin-bottom: 40px;
         }
 
         .projects h2, .mobile-development h2 {
@@ -233,21 +260,6 @@
 
         .project p {
             font-size: 18px;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 20px;
-            background-color: #333;
-            border-radius: 5px;
-            position: relative;
-            margin-top: 10px;
-        }
-
-        .progress-bar .fill {
-            height: 100%;
-            background-color: #ff9900;
-            border-radius: 5px;
         }
 
         .mobile-development ul {
@@ -318,90 +330,104 @@
         </section>
 
         <section id="skills" class="skills">
-            <h2>My Skills</h2>
-            <p class="skills-text">
-                Skilled in various programming languages and technologies with a focus on modern development practices.
-            </p>
+            <h2>Skills</h2>
+            <div class="skills-text">
+                <p>Here are a few programming languages and technologies I am proficient in:</p>
+            </div>
             <div class="skills-list">
                 <div class="skills-item">
-                    <p>Java</p>
-                    <div class="progress">
-                        <div class="fill" style="width: 90%;"></div>
-                    </div>
-                    <p class="percentage">90%</p>
-                </div>
-                <div class="skills-item">
-                    <p>Python</p>
-                    <div class="progress">
-                        <div class="fill" style="width: 85%;"></div>
-                    </div>
-                    <p class="percentage">85%</p>
-                </div>
-                <div class="skills-item">
-                    <p>C / C++</p>
+                    <span>C</span>
                     <div class="progress">
                         <div class="fill" style="width: 95%;"></div>
                     </div>
-                    <p class="percentage">95%</p>
+                    <span class="percentage">95%</span>
                 </div>
                 <div class="skills-item">
-                    <p>PHP</p>
+                    <span>C++</span>
                     <div class="progress">
-                        <div class="fill" style="width: 45%;"></div>
+                        <div class="fill" style="width: 90%;"></div>
                     </div>
-                    <p class="percentage">45%</p>
+                    <span class="percentage">90%</span>
                 </div>
                 <div class="skills-item">
-                    <p>MySQL</p>
+                    <span>Java</span>
+                    <div class="progress">
+                        <div class="fill" style="width: 90%;"></div>
+                    </div>
+                    <span class="percentage">90%</span>
+                </div>
+                <div class="skills-item">
+                    <span>Python</span>
+                    <div class="progress">
+                        <div class="fill" style="width: 55%;"></div>
+                    </div>
+                    <span class="percentage">55%</span>
+                </div>
+                <div class="skills-item">
+                    <span>Kotlin</span>
                     <div class="progress">
                         <div class="fill" style="width: 70%;"></div>
                     </div>
-                    <p class="percentage">70%</p>
+                    <span class="percentage">70%</span>
+                </div>
+                <div class="skills-item">
+                    <span>HTML</span>
+                    <div class="progress">
+                        <div class="fill" style="width: 60%;"></div>
+                    </div>
+                    <span class="percentage">60%</span>
+                </div>
+                <div class="skills-item">
+                    <span>PHP</span>
+                    <div class="progress">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                    <span class="percentage">70%</span>
                 </div>
             </div>
-        </section>
-
-        <section class="mobile-development">
-            <h2>Mobile Development Skills</h2>
-            <ul>
-                <li><i class="fab fa-android"></i> Kotlin & Jetpack Compose (Learning)</li>
-                <li><i class="fab fa-java"></i> Java in Android Development</li>
-                <li><i class="fab fa-apple"></i> Flutter (Basic)</li>
-                <li><i class="fab fa-html5"></i> HTML, CSS, JavaScript</li>
-            </ul>
         </section>
 
         <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="project">
-                <h4>Student Attendance & Faculty Management App</h4>
-                <p>Developing an Android application using Kotlin with Jetpack Compose, PHP, and MySQL for managing student attendance and faculty details. Implemented features such as user authentication, real-time messaging, event calendar, class forums, and assignment management.</p>
-                <div class="progress-bar">
-                    <div class="fill" style="width: 30%;"></div>
-                </div>
-                <p>Completion: 30%</p>
+                <h4>Student Attendance and Faculty Management App</h4>
+                <p>Developed an Android application for managing student attendance and faculty records using Kotlin and Jetpack Compose, with a backend in PHP and MySQL. The app features user authentication, chat and messaging, announcements, event calendar, class forums, assignment management, resource sharing, profile management, study groups, polls, attendance tracking, and fee status.</p>
             </div>
+            <div class="project">
+                <h4>Portfolio Website</h4>
+                <p>Created a personal portfolio website to showcase my projects and skills using HTML, CSS, and Boostrap. The website is designed with a modern and clean layout, featuring sections for About Me, Skills, Projects, and Contact information.</p>
+            </div>
+        </section>
+
+        <section id="mobile-development" class="mobile-development">
+            <h2>Android Development</h2>
+            <ul>
+                <li><i class="fab fa-android"></i> Android Development with Java and Kotlin</li>
+                <li><i class="fas fa-database"></i> Database Management with MySQL</li>
+                <li><i class="fas fa-server"></i> Backend Integration using PHP and JSON</li>
+            </ul>
         </section>
 
         <section id="contact" class="contact-info">
-            <h2>Contact Me</h2>
+            <h2>Contact</h2>
             <div class="info-item">
-                <p class="label">Email:</p>
-                <p class="value"><a href="mailto:kthakkar894@gmail.com">kthakkar894@gmail.com</a></p>
+                <span class="label">Email:</span>
+                <span class="value"><a href="mailto:kthakkar894@gmail.com">kthakkar894@gmail.com</a></span>
             </div>
             <div class="info-item">
-                <p class="label">LinkedIn:</p>
-                <p class="value"><a href="https://www.linkedin.com/in/thakkar-krish-7726452aa/" target="_blank">LinkedIn Profile</a></p>
+                <span class="label">LinkedIn:</span>
+                <span class="value"><a href="https://www.linkedin.com/in/thakkar-krish-7726452aa/" target="_blank">LinkedIn</a></span>
             </div>
             <div class="info-item">
-                <p class="label">GitHub:</p>
-                <p class="value"><a href="https://github.com/IAmKrishThakkar" target="_blank">GitHub Profile</a></p>
+                <span class="label">GitHub:</span>
+                <span class="value"><a href="https://github.com/IAmKrishThakkar" target="_blank">GitHub</a></span>
+            </div>
+            <div class="info-item">
+                <span class="label">Twitter:</span>
+                <span class="value"><a href="https://x.com/ThakkarKrish6" target="_blank">Twitter</a></span>
             </div>
         </section>
-
-        
     </div>
-
     <footer>
         <p>&copy; 2024 Krish Thakkar. All rights reserved.</p>
     </footer>
